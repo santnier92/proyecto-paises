@@ -1,0 +1,131 @@
+:root {
+    --bg-color: hsl(0, 0%, 98%);
+    --element-color: hsl(0, 0%, 100%);
+    --text-color: hsl(200, 15%, 8%);
+    --input-color: hsl(0, 0%, 52%);
+}
+
+[data-theme="dark"] {
+    --bg-color: hsl(207, 26%, 17%);
+    --element-color: hsl(209, 23%, 22%);
+    --text-color: hsl(0, 0%, 100%);
+    --input-color: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--element-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-switcher {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.search-bar,
+.filter-region {
+    background-color: var(--element-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.search-bar input,
+.filter-region select {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    outline: none;
+    width: 100%;
+}
+
+.search-bar i {
+    margin-right: 15px;
+}
+
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.country-card {
+    background-color: var(--element-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.country-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.country-card-info {
+    padding: 25px;
+}
+
+.country-card-info h3 {
+    margin-top: 0;
+}
+
+/* Estilos para la página de detalles */
+.back-button {
+    background-color: var(--element-color);
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 30px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    cursor: pointer;
+    color: var(--text-color);
+    text-decoration: none;
+    display: inline-block;
+}
+
+#country-detail-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+#country-detail-container img {
+    max-width: 500px;
+}
