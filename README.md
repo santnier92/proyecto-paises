@@ -17,7 +17,7 @@
 <br>
 
 <p align="center">
-  <img src="https://i.imgur.com/2sR9s5L.gif" alt="Demostración animada del proyecto" width="80%">
+  <img src="https://i.imgur.com/x69SVxp.gif" alt="Demostración animada del proyecto" width="80%">
 </p>
 
 ---
@@ -73,4 +73,5 @@ Durante el desarrollo de este proyecto, se presentaron varios desafíos que fuer
 ## 📬 Contacto
 
 **Santiago** - [santnier92](https://github.com/santnier92)
+
 
